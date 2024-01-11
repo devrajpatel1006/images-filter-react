@@ -135,18 +135,18 @@ function Navbar({ handleMobileNav }) {
             {isUserExist ? (
               <>
                 <li className="hover:opacity-90 hover:-translate-y-[1px]">
-                  <a className="block text-white text-[17px] font-semibold px-7 py-[6px] rounded-[4px] bg-primary-green">
+                  <a  style={{cursor:'pointer'}} className="block text-white text-[17px] font-semibold px-7 py-[6px] rounded-[4px] bg-primary-green">
                     {JSON.parse(localStorage.getItem("user"))?.email}
                   </a>
                 </li>
                 <li className="hover:opacity-90 hover:-translate-y-[1px]">
-                  <a onClick={() => logout()} className="block text-white text-[17px] font-semibold px-7 py-[6px] rounded-[4px] bg-primary-green">
+                  <a  style={{cursor:'pointer'}} onClick={() => logout()} className="block text-white text-[17px] font-semibold px-7 py-[6px] rounded-[4px] bg-primary-green">
                     Logout
                   </a>
                 </li>
 
                 <li className="hover:opacity-90 hover:-translate-y-[1px]">
-                  <Link to="/download" > <a  className="block text-white text-[17px] font-semibold px-7 py-[6px] rounded-[4px] bg-primary-green">
+                  <Link to="/download"  style={{cursor:'pointer'}} > <a   className="block text-white text-[17px] font-semibold px-7 py-[6px] rounded-[4px] bg-primary-green">
                     Downloaded 
                   </a>
                   </Link>
@@ -159,12 +159,12 @@ function Navbar({ handleMobileNav }) {
                   onClick={openLoginModal}
                   className="hover:opacity-90 hover:-translate-y-[1px]"
                 >
-                  <a className="block text-white text-[17px] font-semibold px-7 py-[6px] rounded-[4px] bg-primary-green">
+                  <a style={{cursor:'pointer'}} className="block text-white text-[17px] font-semibold px-7 py-[6px] rounded-[4px] bg-primary-green">
                     Login
                   </a>
                 </li>
                 <li className="hover:opacity-90 hover:-translate-y-[1px]">
-                  <a
+                  <a  style={{cursor:'pointer'}}
                     href="#"
                     className="block text-white text-[17px] font-semibold px-7 py-[6px] rounded-[4px] bg-primary-green"
                   >
